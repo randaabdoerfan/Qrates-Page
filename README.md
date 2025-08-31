@@ -55,7 +55,6 @@ It uses **React, JSX, and CSS Grid/Flexbox** for layout, and includes multiple s
 
 ![Preview Screenshot](111.png)
 ![Preview Screenshot](222.png)
-![Preview Screenshot](333.png)
 ![Preview Screenshot](444.png)
 ![Preview Screenshot](555.png)
 
