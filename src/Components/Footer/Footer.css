@@ -1,0 +1,264 @@
+.footer{
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    padding: 50px 20px;
+    position: sticky;
+}
+.head{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+.start{
+    border: 2px #FFF solid;
+    width: 70px;
+    font-size: 10px;
+    padding: 4px;
+    margin: 100px  auto;
+}
+.description {
+  max-width: 700px;
+  margin: 100px auto ;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.vinyl-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+.vinyl{
+height: 250px;
+}
+
+.album {
+  height: 250px;
+}
+
+
+.dollar-icon {
+  position: absolute;
+  right: 10%;
+  top: 20px;
+  font-size: 60px;
+  color: white;
+  transform: rotate(-20deg);
+  text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+.button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;              
+}
+
+.button {
+  background-color:#FFF804 ;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  padding: 30px 90px;
+  padding-bottom: 40px;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 200px auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h2 {
+  margin:0;
+  font-size: 18px;
+}
+
+.footer-column ul {
+    color: #FFF;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #FFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.footer-container2 {
+  display: flex;
+  gap: 30px;   
+  font-family: Arial, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-left img {
+  width: 60px;
+  filter: invert(1);
+  height: auto;
+}
+
+.footer-text h2 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.footer-text p {
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.3;
+  font-weight: 900;
+  -webkit-text-stroke: 1px white;
+  color: black;
+}
+
+
+.footer-center {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+}
+
+.footer-center a, 
+.footer-center span {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-center a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;       
+  font-size: 20px;    
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;     
+}
+
+
+@media (max-width: 992px) {
+  .head {
+    font-size: 32px;
+  }
+  .vinyl, .album {
+    height: 180px;
+  }
+  .button {
+    padding: 20px 60px;
+  }
+  .footer-text h2 {
+    font-size: 30px;
+  }
+  .footer-text p {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .vinyl-content {
+    flex-direction: column;
+    margin: 100px 0;
+  }
+  .button {
+    padding: 15px 40px;
+    font-size: 14px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+  }
+  .footer-container2 {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-text h2 {
+    font-size: 24px;
+  }
+  .footer-text p {
+    font-size: 16px;
+  }
+  .dollar-icon {
+    font-size: 40px;
+    right: 5%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .head {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 13px;
+    margin: 50px auto;
+  }
+  .vinyl, .album {
+    height: 140px;
+  }
+  .button {
+    padding: 10px 25px;
+    font-size: 12px;
+  }
+  .footer-text h2 {
+    font-size: 18px;
+  }
+  .footer-text p {
+    font-size: 14px;
+  }
+  .social-icons {
+    gap: 10px;
+  }
+  .social-icons a {
+    font-size: 18px;
+  }
+}
+

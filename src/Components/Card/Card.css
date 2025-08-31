@@ -1,0 +1,157 @@
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  min-height: 100vh; 
+  font-family: 'Poppins', sans-serif;
+  margin: 0px auto;
+  gap: 0;
+}
+
+.left-side, .right-side { 
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.left-side { 
+  
+  background-color: #FFF804;
+  color: #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-left: none;
+  border-right: 2px solid #000000;
+} 
+
+.right-side {
+  background-color: #81836C; 
+  color: #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: none;
+}
+
+p.start {
+  border: 2px solid #000000;
+  background-color: #FFF;
+  color: #000000;
+  font-size: 9px;
+  font-family: 'Poppins', sans-serif;
+  padding: 5px 20px; 
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+p.content {
+  font-size: 14px;
+  width: 430px ;
+  height: 90px;
+  margin: 20px 10px;
+}
+
+.start:hover {
+  background-color: #000000;
+  color: #FFF;
+}
+
+.end-card {
+  grid-column: span 2;
+  background-color: #000000;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.img {
+  height: 200px;
+  margin: 20px 0;
+}
+
+button.btn {
+  background-color: #000;
+  color: #FFF;
+  border: none;
+  padding: 10px 75px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #FFF;
+  color: #000;
+  border: 1px solid #000;
+}
+h3{
+  font-weight: 400;
+}
+.left{
+  text-align: left;
+  width: 820px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.right{
+  text-align: right;
+  justify-content: right;
+  justify-items: right;
+  text-decoration: underline;
+  margin-top: 0;
+  font-size: 15px;
+
+}
+
+@media (max-width: 768px) {
+  .page-grid {
+    grid-template-columns: 1fr;    
+    grid-template-rows: auto auto; 
+  }
+
+  .left-side, .right-side {
+    border: 2px solid #000;
+  }
+
+  .right-side {
+    border-top: none; 
+  }
+
+  .left, .right {
+    width: 100%;   
+    text-align: center; 
+  }
+
+  p.content {
+    width: 90%; 
+    height: auto;
+    font-size: 13px;
+  }
+
+  button.btn {
+    width: 100%; 
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-side {
+    align-items: center; 
+    text-align: center;
+  }
+
+  .img {
+    height: auto;
+    width: 90%; 
+  }
+}
+
+
